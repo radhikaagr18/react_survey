@@ -2,7 +2,7 @@ import React,{Component} from "react";
 import ReactDOM from "react-dom";
 import * as Survey from "survey-react";
 import "survey-react/survey.css";
-// import "./styles.css";
+import "./styles.css";
 
 class SurveyComponent extends Component{
   constructor(props) {
@@ -17,23 +17,33 @@ class SurveyComponent extends Component{
     let json = {
       questions: [
         {
-          type: "checkbox",
-          name: "income",
-          title: "Select all you sources of incomefrom the list below",
-          isRequired: true,
-          colCount: 4,
-          choicesOrder: "asc",
-          choices: [
-            "Ford",
-            "Tesla",
-            "Vauxhall",
-            "Volkswagen",
-            "Nissan",
-            "Audi",
-            "Mercedes-Benz",  
-            "Citroen"
-          ]
+          "type": "imagepicker",
+          "choices": [
+           {
+            "value": "lion",
+            "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/lion.jpg"
+           },
+           {
+            "value": "giraffe",
+            "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/giraffe.jpg"
+           },
+           {
+            "value": "panda",
+            "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/panda.jpg"
+           },
+           {
+            "value": "camel",
+            "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/camel.jpg"
+           },
+           {
+            "value": "Accounts",
+            "imageLink": "https://www.indiafilings.com/learn/wp-content/uploads/2017/10/Maintaining-Book-of-Accounts-of-Company.jpg"
         }
+          ],
+          "imageFit": "fill",
+          "multiSelect": true,
+          "showLabel": true,
+         }
       ]
     };
     var surveyRender = !this.state.isCompleted ? (

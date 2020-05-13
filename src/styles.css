@@ -1,3 +1,6 @@
+*{
+  overflow: hidden;
+}
 html, body {
     height: 100%;
   }
@@ -12,48 +15,39 @@ html, body {
     visibility:collapse;
 } 
 :root {
-    --primary-color: #8f3985;
+    --primary-color: black;
   } 
-  .sv_q{
+  .sv_body{
       margin: auto;
-      max-width: 1000px;
+      max-width: 1000pt;
   }
-.sv_scdx{
+.sv_q{
     margin: auto;
     padding: 8rem;;
   display: grid;
-  grid-gap: 1rem;
-  max-width: 450px;
+  grid-gap: 0.8rem;
+  max-width: 970pt;
   margin-top: 5px;
 }
-.sv_q_checkbox{
-    display: flex;
-  text-align: center;
+.sv_q_imgsel{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.2em;
+  margin: 0.5rem;
+  border: solid 0.2rem;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-.sv_q_checkbox [type="checkbox"] {
-    margin: 0;
-    opacity: 0;
-    width: 8rem;
-    height: 8rem;
-    position: absolute;
-  }
-  .sv_q_checkbox [type="checkbox"]:hover {
-    cursor: pointer;
-  }
-  .sv_q_checkbox label {
-      margin: 2rem;;
-    width: 7rem;
-    height: 7rem;
-    display: flex;
-    padding: 2.5rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid    var(--primary-color);
-  }
-  .checked label {
-    background-color:  #8f3985;
-    color: white;
-  }
+.sv_q_imgsel_label{
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.5em;
+  color:black;
+
   
+}
+.checked label {
+  background-color:  #8f3985;
+  color: white;
+}
