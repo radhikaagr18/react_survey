@@ -1,0 +1,59 @@
+html, body {
+    height: 100%;
+  }
+
+  .App h1 {
+    text-align: center;
+  }
+  .App h2 {
+    text-align: center;
+  }
+.sv_q_title,.sv_q_description{
+    visibility:collapse;
+} 
+:root {
+    --primary-color: #8f3985;
+  } 
+  .sv_q{
+      margin: auto;
+      max-width: 1000px;
+  }
+.sv_scdx{
+    margin: auto;
+    padding: 8rem;;
+  display: grid;
+  grid-gap: 1rem;
+  max-width: 450px;
+  margin-top: 5px;
+}
+.sv_q_checkbox{
+    display: flex;
+  text-align: center;
+}
+.sv_q_checkbox [type="checkbox"] {
+    margin: 0;
+    opacity: 0;
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+  }
+  .sv_q_checkbox [type="checkbox"]:hover {
+    cursor: pointer;
+  }
+  .sv_q_checkbox label {
+      margin: 2rem;;
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    padding: 2.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid    var(--primary-color);
+  }
+  .checked label {
+    background-color:  #8f3985;
+    color: white;
+  }
+  
